@@ -32,6 +32,7 @@ let Titel = 0
 let Ordner = 0
 serialmp3.connectSerialMp3(DigitalPin.C16, DigitalPin.C17)
 Ordner = serialmp3.mp3Folder()
-Titel = 1
+Titel = serialmp3.mp3Track()
 basic.showNumber(Ordner)
+_("elssner/mp3-61")
 _("Erweiterung serialmp3 laden")
